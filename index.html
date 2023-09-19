@@ -7,12 +7,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
     <title>Room & Roomies</title>
     <style>
-
+        body {
+            background-color: powderblue;
+        }
+        .logo {
+            padding-top: 200px;
+        } 
     </style>
+    <script>
+        setInterval(
+  function() {
+    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor;
+  }, 1000);
+
+
+    </script>
 </head>
 <body>
     <div class="container">
-        <a href="https://instagram.com/roomandroomies"><img src="static/rooming-soon-logo.png" alt=""></a>
+        <a href="https://instagram.com/roomandroomies"><img class="logo" src="static/rooming-soon-logo.png" alt=""></a>
     </div>
 </body>
 </html>
